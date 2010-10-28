@@ -1,0 +1,7 @@
+.DS_Store
+snippets.tmproj
+Thumbs.db
+config/databases.yml
+log/*
+cache/*
+web/uploads/*
