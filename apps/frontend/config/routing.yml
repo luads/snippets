@@ -1,16 +1,19 @@
-# You can find more information about this file on the symfony website:
-# http://www.symfony-project.org/reference/1_4/en/10-Routing
-
-# default rules
+snippet:
+  url:    /snippet/:slug
+  param:  { module: snippet, action: show }
+  
+snippet_by_tag:
+  url:    /tag/:tag
+  param:  { module: snippet, action: listByTag }
+  
+snippet_by_autor:
+  url:    /autor/:autor
+  param:  { module: snippet, action: listByAutor }
+  
+novo:
+  url:    /novo
+  param:  { module: snippet, action: novo }
+  
 homepage:
-  url:   /
-  param: { module: default, action: index }
-
-# generic rules
-# please, remove them by adding more specific rules
-default_index:
-  url:   /:module
-  param: { action: index }
-
-default:
-  url:   /:module/:action/*
+  url:    /
+  param:  { module: snippet, action: index }

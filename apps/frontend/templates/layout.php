@@ -9,6 +9,8 @@
     <?php include_javascripts() ?>
   </head>
   <body>
+    <h1><a href="<?php echo url_for('@homepage') ?>">Snippets</a></h1>
+    
     <?php echo $sf_content ?>
   </body>
 </html>

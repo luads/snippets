@@ -1,1 +1,11 @@
 Repositório de snippets com syntax highlight feito em PHP + Symfony
+
+---------------
+
+TODO:
+- Embed form de autores
+- List by autor
+- Adicionar tags no snippet
+- Exibição das tags
+- List by tag
+- Comentários?

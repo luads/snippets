@@ -29,7 +29,7 @@ all:
 
     # Output escaping settings
     escaping_strategy:      true
-    escaping_method:        ESC_SPECIALCHARS
-
+    escaping_method:        ESC_RAW
+    
     # Enable the database manager
     use_database:           true

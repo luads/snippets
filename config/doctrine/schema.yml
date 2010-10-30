@@ -1,0 +1,23 @@
+Snippet:
+  actAs: 
+    Timestampable: ~ 
+    Taggable: ~ 
+    Sluggable: 
+      fields: [titulo]
+      unique: true
+  columns:
+    autor_id:   { type: integer }
+    titulo:     { type: string(150), notnull: true }
+    linguagem:  { type: string(50), notnull: true }
+    snippet:    { type: clob, notnull: true }
+  relations:
+    Autor:      { onDelete: SET NULL, local: autor_id, foreign: id, foreignAlias: Snippets }
+
+Autor:
+  actAs: 
+    Timestampable: ~
+    Sluggable: 
+      fields: [nome]
+      unique: true
+  columns:
+    nome:     { type: string(150), notnull: true }

@@ -1,0 +1,120 @@
+/* reset */
+body, html, div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul, ol,
+li, dl, dt, dd, form, a, fieldset, input, th, td { margin: 0; padding: 0; border: 0; outline: none; }
+a { color: #000; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* default classes */
+.clear { clear:both; }
+
+body {
+  font-family:Helvetica, Arial, sans-serif;
+  padding:20px;
+}
+
+h1 {
+  margin:20px 0;
+}
+
+h1 a {
+  color:#336666;
+  text-transform:lowercase;
+  letter-spacing:1px;
+  font-size:48px;
+  font-weight:normal;
+}
+
+#novo { margin:40px 0; }
+
+#bt-novo {
+  background-color:#336666;
+  color:#fff;
+  padding:0 20px;
+  border:5px solid #336666;
+}
+#bt-novo:hover {
+  background-color:#fff;
+  color:#336666;
+  border-color:#fff;
+  text-decoration:none;
+}
+
+form label {
+  display:block;
+  font-weight:bold;
+  color:#336666;
+  font-size:12px;
+  margin-top:10px;
+}
+
+form input[type=text], form select, form textarea {
+  border:1px solid #336666;
+  padding:3px;
+}
+
+form input[type=text] {
+  width:300px;
+}
+
+form input[type=submit] {
+  padding:5px 20px;
+  margin:20px 0;
+  background-color:#336666;
+  color:#fff;
+  font-weight:bold;
+}
+
+fieldset {
+  margin:10px 0;
+  border:1px solid #efefef;
+  width:310px;
+  padding:0 20px 20px;
+}
+
+legend { font-size:12px; font-weight:bold; }
+
+.error {
+  color:#666;
+  padding:5px 5px 5px 30px;
+  width:600px;
+  margin-bottom:10px;
+  font-size:12px;
+  border:dashed 1px #ffa19f;
+  background:#f6cbca url(../images/exclamation.png) no-repeat 10px 50%;
+}
+.error li { list-style:none; }
+.error_list { margin-bottom:5px; }
+.error_list li {
+  list-style:none;
+  color:#f00;
+  font-style:italic;
+  text-transform:lowercase;
+  font-size:11px;
+}
+
+#snippets ul li {
+  list-style:none;
+  font-size:12px;
+  margin:5px 0;
+}
+#snippets ul li a {
+  color:#336666;
+  font-size:14px;
+}
+
+h2 {
+  color:#336666;
+}
+
+#snippet { margin:20px 0; }
+
+#voltar {
+  margin:20px 0;
+  text-transform:lowercase;
+  font-size:12px;
+  font-weight:bold;
+}
+
+#voltar a {
+  color:#336666;
+}

@@ -5,3 +5,7 @@ config/databases.yml
 log/*
 cache/*
 web/uploads/*
+data/sql/*
+lib/model/doctrine/base/*
+lib/form/doctrine/base/*
+lib/filter/doctrine/base/*
