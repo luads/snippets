@@ -118,3 +118,14 @@ h2 {
 #voltar a {
   color:#336666;
 }
+
+#snippets ul.tags-list li {
+  display: inline;
+  padding-left: 5px;
+}
+
+#snippets ul.tags-list li a {
+  font-size: 10px;
+}
+
+

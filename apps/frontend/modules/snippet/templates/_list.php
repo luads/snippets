@@ -1,4 +1,5 @@
 <?php use_helper('Date') ?>
+<?php use_helper('Tags') ?>
 
 <?php if (count($snippets)): ?>
 <div id="snippets">
@@ -16,6 +17,7 @@
       <!-- Data -->
       em <?php echo format_date($snippet->getCreatedAt(), 'd/M/y') ?>
       <!-- Tags -->
+      <?php echo tag_list($snippet->getTags(), '@snippet_by_tag?tag=') ?>
     </li>
     <?php endforeach ?>
   </ul>

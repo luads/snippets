@@ -20,6 +20,12 @@
   <?php echo $form['autor_id']->renderLabel() ?>
   <?php echo $form['autor_id']->renderError() ?>
   <?php echo $form['autor_id'] ?>
+
+  <!-- Tag widget render -->
+  <?php echo $form['tags']->renderLabel() ?>
+  <?php echo $form['tags']->renderError() ?>
+  <?php echo $form['tags']->render(array('class' => 'add-text tag-input')) ?>
+  <?php echo $form['tags']->renderHelp() ?>
   
   <!--   
   <fieldset id="novo-autor">

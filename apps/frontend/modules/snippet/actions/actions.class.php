@@ -25,6 +25,8 @@ class snippetActions extends sfActions
   
   public function executeListByTag(sfWebRequest $request)
   {
+    $this->snippets = PluginTagTable::getObjectTaggedWith($request->getParameter('tag'));
+    $this->setTemplate('index');
   }
   
   public function executeListByAutor(sfWebRequest $request)

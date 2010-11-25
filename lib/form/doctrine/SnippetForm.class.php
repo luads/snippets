@@ -18,6 +18,12 @@ class SnippetForm extends BaseSnippetForm
     $this->widgetSchema['snippet']    = new sfWidgetFormTextarea(array(), array('cols' => 60, 'rows' => 10));
     
     $this->setDefaults(array('linguagem' => 'text'));
+
+    //tags input
+    $this->setWidget('tags', new sfWidgetFormInputText());
+    $this->setValidator('tags', new sfValidatorString(array('required' => false)));
+
+    $this->widgetSchema->setHelp('tags', 'Insira as tags seperadas por vírgula');
     
     // $this->embedForm('autor', new AutorForm());
   }
